@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashman Raut | Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-container" id="loading-screen">
+    <div class="loading-logo">AR</div>
+    <div class="loading-bar">
+      <div class="loading-progress"></div>
+    </div>
+    <div class="loading-text">Loading Website...</div>
+  </div>
+
+  <!-- Spotlight Effect -->
+  <div class="spotlight-effect" id="spotlight"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <a href="#" class="logo">Ashman Raut</a>
+        <nav class="nav-desktop">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <button class="menu-button" id="menu-toggle">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="#" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#portfolio" class="mobile-link">Portfolio</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title animate-fade-in">
+            Hello, I'm <span class="text-primary">Ashman Raut</span>
+          </h1>
+          <p class="hero-subtitle animate-fade-in animate-delay-200">
+            Computer Science Student | Front-End Developer | UI/UX Designer
+          </p>
+          <div class="hero-buttons animate-fade-in animate-delay-300">
+            <a href="#about" class="button button-primary">
+              About Me
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#portfolio" class="button button-outline">
+              View My Work
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-cards">
+          <div class="card animate-slide-in-left animate-delay-500">
+            <h2 class="card-title">My Passion</h2>
+            <p class="card-text">
+              I'm passionate about front-end development and UI/UX design, creating intuitive and 
+              engaging digital experiences. As a first-year computer science student, I'm constantly 
+              developing my skills and working on new projects.
+            </p>
+          </div>
+          
+          <div class="card animate-slide-in-right animate-delay-500">
+            <h2 class="card-title">My Approach</h2>
+            <p class="card-text">
+              I believe in combining technical excellence with creative design thinking. 
+              I'm dedicated to learning and applying new technologies while maintaining a 
+              focus on creating user-friendly interfaces that solve real problems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">About Me</h2>
+        
+        <div class="about-grid">
+          <div class="about-image animate-on-scroll" data-animation="slide-in-left">
+            <img src="images/profile.png" alt="Profile Picture">
+          </div>
+          
+          <div class="card about-card animate-on-scroll" data-animation="slide-in-right">
+            <h3 class="card-title">My Story</h3>
+            <div class="card-content">
+              <p class="mb-4">
+                I am a first year student studying computer science at Fr. CRCE. I've been working on projects and
+                continuously developing my skills in various areas of technology.
+              </p>
+              <p class="mb-4">
+                I'm particularly good at front-end development and UI/UX design, where I enjoy creating intuitive and
+                visually appealing interfaces that enhance user experience.
+              </p>
+              <p>
+                When I'm not working on my skills or studying, you can find me reading books, listening to music,
+                and watching movies. I believe in balancing technical work with creative pursuits to maintain a
+                well-rounded perspective.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <h3 class="section-subtitle animate-on-scroll">Skills & Expertise</h3>
+        
+        <div class="skills-grid">
+          <div class="card animate-on-scroll" data-animation="scale-in" data-delay="200">
+            <h3 class="card-title">Front-End Development</h3>
+            <div class="card-content">
+              <ul class="skill-list">
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>User Interface Design</li>
+                <li>User Experience Principles</li>
+                <li>Frontend Frameworks</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="card animate-on-scroll" data-animation="scale-in" data-delay="300">
+            <h3 class="card-title">Tools & Others</h3>
+            <div class="card-content">
+              <ul class="skill-list">
+                <li>ChatGPT, Claude AI</li>
+                <li>Vercel, Replit</li>
+                <li>Git, GitHub</li>
+                <li>Visual Studio Code</li>
+                <li>Prototyping Tools</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <h3 class="section-subtitle animate-on-scroll">Education Journey</h3>
+        
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          
+          <div class="timeline-item animate-on-scroll" data-animation="slide-in-left">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h4 class="timeline-title">B.Tech in Computer Science</h4>
+                <p class="timeline-period">2024 - 2028</p>
+              </div>
+              
+              <div class="timeline-dot"></div>
+               
+              <div class="card timeline-card"> 
+                <div class="card-content">
+                  <p>Fr. CRCE (Fr. Conceicao Rodrigues College of Engineering)</p>
+                  <p class="text-muted">Currently in my first year of engineering, focusing on computer science fundamentals and programming skills.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item animate-on-scroll" data-animation="slide-in-right">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h4 class="timeline-title">Primary Education</h4>
+                <p class="timeline-period">Completed 2022</p>
+              </div>
+              
+              <div class="timeline-dot"></div>
+              
+              <div class="card timeline-card">
+                <div class="card-content">
+                  <p>Rahul International School</p>
+                  <p class="text-muted">Completed my primary education with a strong foundation in science and mathematics.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <h3 class="section-subtitle animate-on-scroll">Achievements</h3>
+        
+        <div class="achievements-grid">
+          <div class="card animate-on-scroll" data-animation="scale-in">
+            <h3 class="card-title">Academic Excellence</h3>
+            <div class="card-content">
+              <ul class="achievement-list">
+                <li>
+                  <strong>9.6 SGPA</strong> - First Semester, B.Tech Computer Science
+                </li>
+                <li>
+                  <strong>98 Percentile</strong> - Common Entrance Test (CET)
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="card animate-on-scroll" data-animation="scale-in" data-delay="300">
+            <h3 class="card-title">Skills Development</h3>
+            <div class="card-content">
+              <ul class="achievement-list">
+                <li>
+                  <strong>Self-taught Front-End Development</strong> - Mastered HTML, CSS, and JavaScript
+                </li>
+                <li>
+                  <strong>UI/UX Design Principles</strong> - Applied user-centered design in various projects
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">My Portfolio</h2>
+        
+        <p class="section-description animate-on-scroll">
+          Here's a collection of my projects and works. Each project represents a unique challenge and learning experience.
+        </p>
+        
+        <div class="projects-grid">
+          <div class="project-card animate-on-scroll" data-animation="scale-in" data-delay="100">
+            <div class="project-image">
+              <img src="images/projects/iks.png" alt="IKS Website">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">IKS Website</h3>
+              <p class="project-description">A website dedicated to exploring the wisdom of ancient Indian cooking. Highlights traditional cooking techniques, provides insights into recipes, healthy practices, and historical kitchen methods.</p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Responsive Design</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="button button-primary">View Project <i data-lucide="external-link"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card animate-on-scroll" data-animation="scale-in" data-delay="200">
+            <div class="project-image">
+              <img src="images/projects/ccp.png" alt="CCP Website">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">CCP Website</h3>
+              <p class="project-description">Focuses on preserving India's rich cultural and historical heritage. Highlights the country's diverse traditions, architectural marvels, and folklore through interactive sections like Explore, Quiz, Map, and Chatbot.</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="button button-primary">View Project <i data-lucide="external-link"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card animate-on-scroll" data-animation="scale-in" data-delay="300">
+            <div class="project-image">
+              <img src="images/projects/skilex.png" alt="SkillEX">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">SkillEX</h3>
+              <p class="project-description">A skill trading platform where you can exchange skills instead of money. SkillEX connects you to people which help you learn and grow together.</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="button button-primary">View Project <i data-lucide="external-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Photo Gallery Section -->
+        <h3 class="section-subtitle animate-on-scroll text-center">Photo Gallery</h3>
+        
+        <div class="carousel-container animate-on-scroll">
+          <div class="carousel" id="gallery-carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/gallery/img1.png" alt="Gallery image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery/img2.png" alt="Gallery image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery/img3.png" alt="Gallery image 3">
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery/img4.png" alt="Gallery image 4">
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery/img5.png" alt="Gallery image 5">
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery/img6.png" alt="Gallery image 6">
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery/img7.png" alt="Gallery image 7">
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery/img8.png" alt="Gallery image 8">
+              </div>
+            </div>
+            
+            <button class="carousel-control carousel-prev" id="carousel-prev">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            
+            <button class="carousel-control carousel-next" id="carousel-next">
+              <i data-lucide="chevron-right"></i>
+            </button>
+            
+            <div class="carousel-indicators" id="carousel-indicators"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+        
+        <p class="section-description animate-on-scroll">
+          Have a question or want to work together? Feel free to reach out using the form below 
+          or through any of my social media channels.
+        </p>
+        
+        <div class="contact-info-grid">
+          <div class="card contact-card animate-on-scroll" data-animation="slide-in-left">
+            <div class="card-header">
+              <i data-lucide="mail"></i>
+              <h3 class="card-title">Email</h3>
+            </div>
+            <div class="card-content">
+              <a href="mailto:AshmanRaut@gmail.com" class="contact-link">AshmanRaut@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="card contact-card animate-on-scroll" data-animation="fade-in">
+            <div class="card-header">
+              <i data-lucide="phone"></i>
+              <h3 class="card-title">Phone</h3>
+            </div>
+            <div class="card-content">
+              <a href="tel:+91 9920843826" class="contact-link">+91 9920843826</a>
+            </div>
+          </div>
+          
+          <div class="card contact-card animate-on-scroll" data-animation="slide-in-right">
+            <div class="card-header">
+              <i data-lucide="map-pin"></i>
+              <h3 class="card-title">Location</h3>
+            </div>
+            <div class="card-content">
+              <p>Mumbai, India</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="card contact-form-card animate-on-scroll" data-animation="slide-in-left">
+            <h3 class="card-title">Send Me a Message</h3>
+            <p class="card-description">Fill out the form below and I'll get back to you as soon as possible.</p>
+            
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+              </div>
+              
+              <button type="submit" class="button button-primary button-full">Send Message</button>
+            </form>
+          </div>
+          
+          <div class="card social-card animate-on-scroll" data-animation="slide-in-right">
+            <h3 class="card-title">Connect With Me</h3>
+            <p class="card-description">Follow me on social media to see my latest updates and projects.</p>
+            
+            <div class="social-grid">
+              <a href="https://github.com/AshmanRaut" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i data-lucide="github"></i>
+                <span>GitHub</span>
+              </a>
+              
+              <a href="https://www.linkedin.com/in/ashman-raut-479965330/" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i data-lucide="linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              
+              <a href="https://www.instagram.com/ashmanraut/" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i data-lucide="instagram"></i>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chat Button -->
+    <div class="chat-button">
+      <button class="button button-icon button-round">
+        <i data-lucide="message-square"></i>
+        <span class="sr-only">Chat with me</span>
+      </button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://github.com/AshmanRaut" target="_blank" rel="noopener noreferrer">
+          <i data-lucide="github"></i>
+          <span class="sr-only">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ashman-raut-479965330/" target="_blank" rel="noopener noreferrer">
+          <i data-lucide="linkedin"></i>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+        <a href="https://www.instagram.com/ashmanraut/" target="_blank" rel="noopener noreferrer">
+          <i data-lucide="instagram"></i>
+          <span class="sr-only">Instagram</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
